@@ -48,7 +48,7 @@ Below is a sample snippet from `textLog.txt` for Subject **S01**:
 …
 2023/12/20_19:03:49,I-WANT-TO-BUY-A-NEW-PHONE-<
 ```
-
+---
 
 ### Log Structure Description
 
@@ -101,8 +101,8 @@ In addition to `textLog.txt`, two other log files provide detailed traces of the
 
 ### 1. `selectLog.txt`
 
-This file captures the **actual selections** made by the participant during each spelling cycle, with timestamps. Each line is formatted as:
-| Example                          | Meaning                                                                 |
+This file captures the **actual selections** made by the participant during each spelling cycle, with timestamps. Each line is formatted as: 
+| Example [TIMESTAMP],[ACTION]                         | Meaning                                                                 |
 |----------------------------------|-------------------------------------------------------------------------|
 | `2023/12/20_18:50:12`            | Start of session                                                        |
 | `2023/12/20_18:50:46,I`          | Selected character "I"                                                  |
@@ -128,7 +128,8 @@ This file captures the **actual selections** made by the participant during each
 
 This file records the **prediction word list** shown to the user at each step. Each line includes a timestamp and a comma-separated list of 10 predicted words.
 
-| Example                                                                                   | Meaning                                                                                      |
+
+| Example ([TIMESTAMP],[WORD_1],[WORD_2],…,[WORD_10])                                                                               | Meaning                                                                                      |
 |--------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
 | `2023/12/20_18:50:47,AM,CAN,WILL,HAVE,WANT,...`                                             | 10 prediction candidates shown to the user at this time                                      |
 | `2023/12/20_18:55:07,BE,BUY,BECOME,BRING,...`                                               | GPT-3.5 generated 10 new suggestions based on sentence context                               |
