@@ -36,7 +36,7 @@ ChatBCI-Experiment-Logs/
 └── README.md                   # This documentation file
 ```
 
-## Example: `textLog.txt`
+## Main Log: `textLog.txt`
 
 Below is a sample snippet from `textLog.txt` for Subject **S01**:
 ```
