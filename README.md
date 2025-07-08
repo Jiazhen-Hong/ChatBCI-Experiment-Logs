@@ -56,10 +56,10 @@ Below is a sample snippet from `textLog.txt` for Subject **S01**:
 |------------------------------------------------|--------------------|------------------------------------------------------------------------------|
 | `2023/12/20_18:50:12`                          | Timestamp      | Session start time.                                                          |
 | `2023/12/20_18:50:12,>I want to buy a new...`  | Target sentence       | Marked by `>`, this line shows the full sentence intended by the user.      |
-| `2023/12/20_18:52:00,I-CAN-<`                  | Spelling procedure  | Each line shows the current composed text after a selection cycle. Ends with `<` to indicate ongoing composition. |
+| `2023/12/20_18:52:00,I-CAN-<`                  | Spelling progress  | Each line shows the current composed text after a selection cycle. Ends with `<` to indicate ongoing composition. |
 | `-` (dash between words)                       | Space character    | The dash symbol (`-`) represents a space between words in the log.          |
 
-Each intermediate line reflects the **user’s current composition state** and is recorded after each keystroke selection. These logs are useful for analyzing: Spelling progression Correction behavior and Efficiency of prediction/completion usage.
+Each intermediate line reflects the **user’s current composition state** and is recorded after each keystroke selection. These logs are useful for analyzing: Spelling progress, Correction behavior, and Efficiency of prediction/completion usage.
 
 ---
 
